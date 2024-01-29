@@ -3,12 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jewwlry Store</title>
+    <title>Jewelry Store</title>
+
     <!--Stylesheets-->
+    <link rel="reset stylesheet" href="./CSS/reset.css">
+    <link rel="styles stylesheet" href="./CSS/styles.css">
+    <link rel="responsive stylesheet" href="./CSS/responsive.css">
     <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+    <header>
+        <!--NAVIGATION BAR-->
+        <div class="outer-nav container">
+            <div class="inner-nav">
+
+                <!--HAMBURGER MENU-->
+                <div class="ham-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <!--MOBILE NAVIGATION MENU-->
+                <div class="mobile-navigation-menu">
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav-list">
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Collections</a></li>
+                            <li><a href="">Diamonds</a></li>
+                            <li><a href="">Weddings</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--NAVIGATION MENU-->
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Collections</a></li>
+                        <li><a href="">Diamonds</a></li>
+                    </ul>
+                    <div class="logo">
+                        <img src="./Assets/logo.png" alt="logo">
+                    </div>
+                   <ul class="nav-list">
+                        <li><a href="">Weddings</a></li>
+                        <ul class="nav-icons">
+                            <li><a href=""></a><img src="./Assets/search.svg" alt="Search"></li>
+                            <li><a href=""></a><img src="./Assets/favorite.svg" alt="Favorites"></li>
+                            <li><a href=""><img src="./Assets/shopping-bag.svg" alt="Shopping Bag"></a></li>
+                            <li><a href=""><img src="./Assets/profile.svg" alt="User Profile"></a></li>
+                        </ul>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--HERO SECTION-->
+        <section>
+            <div class="container hero-section">
+                <div class="hero-text">
+                    <h1>Crafting Dreams, One Jewel at a Time</h1>
+                    <h6>Step into a World of Brilliance and Elegance as You Explore Our Exquisite Jewelry Collections.</h6>   
+                </div>
+                <div class="hero-btns">
+                    <button class="btn sec"><a href=""></a>Shop Now</button>
+                    <button class="btn pry"><a href=""></a>Book an Appointment</button>
+                </div>
+                <div class="hero-imgs">
+                    <img src="./Assets/left-img.png" alt="Hero Image">
+                    <img src="./Assets/center-img.png" alt="Hero Image">
+                    <img src="./Assets/right-img.png" alt="Hero Image">
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <!--BANNER-->
+        <section id="banner-section">
+            <div class="banner">
+                <div class="banner-div">
+                    <p class="body-large">New Arrivals</p>
+                    <img src="./Assets/van.svg">
+                </div>
+                <div class="banner-div">
+                    <p class="body-large">New Arrivals</p>
+                    <img src="./Assets/van.svg">
+                </div>
+                <div class="banner-div">
+                    <p class="body-large">New Arrivals</p>
+                    <img src="./Assets/van.svg">
+                </div>
+                <div class="banner-div">
+                    <p class="body-large">New Arrivals</p>
+                    <img src="./Assets/van.svg">
+                </div>
+                <div class="banner-div">
+                    <p class="body-large">New Arrivals</p>
+                    <img src="./Assets/van.svg">
+                </div>
+                <div class="banner-div">
+                    <p class="body-large">New Arrivals</p>
+                    <img src="./Assets/van.svg">
+                </div>
+                <div class="banner-div">
+                    <p class="body-large">New Arrivals</p>
+                    <img src="./Assets/van.svg">
+                </div>
+                <div class="banner-div">
+                    <p class="body-large">New Arrivals</p>
+                    <img src="./Assets/van.svg">
+                </div>
+            </div>
+        </section>
+
+        <!--IMAGE GRID-->
+        <section>
+            <div class="container image-grid">
+                <div class="grid-items">
+                    <div class="item personal-collection">
+                        <div class="grid-bttm-div"><p class="body-large">Personalized Collection</p></div>
+                    </div>
+                    <div class="item bracelets">
+                        <div class="grid-bttm-div"><p class="body-large">Bracelets</p></div>
+                    </div>
+                    <div class="item new-arrivals">
+                        <div class="grid-bttm-div"><p class="body-large">New Arrivals</p></div>
+                    </div>
+                    <div class="item chains">
+                        <div class="grid-bttm-div"><p class="body-large">Chains/Necklaces</p></div>
+                    </div>
+                    <div class="item rings">
+                        <div class="grid-bttm-div"><p class="body-large">Rings</p></div>
+                    </div>
+                    <div class="item gifts">
+                        <div class="grid-bttm-div"><p class="body-large">Gifts</p></div>
+                    </div>
+                    <div class="item diamond-selection">
+                        <div class="grid-bttm-div"><p class="body-large">Diamond Selection</p></div>
+                    </div>
+                    <div class="item weddings">
+                        <div class="grid-bttm-div"><p class="body-large">Weddings</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
     
 </body>
 </html>

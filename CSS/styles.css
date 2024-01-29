@@ -1,0 +1,358 @@
+:root {
+    /*COLOR STYLES*/
+    --main-bg: #FCF2F6;
+    --nav-bg: #F8DEE8;
+    --primary-btn: #F2BED1;
+    --secondary-btn: #270A0A;
+    --light-text: #FBE9F0;
+    --dark-text: #200808;
+    --pink-500: #F2BED1;
+
+    --transition: all 300ms ease;
+
+    --container-width-lg: 90%;
+    --container-width-md: 85%;
+    
+    --border-radius-1: 0.5rem;
+    --border-radius-2: 1rem;
+    --border-radius-3: 1.5rem;
+    --border-radius-4: 2rem;
+    --border-radius-5: 5rem;
+
+}
+
+/* GENERAL STYLES */
+
+body {
+    background: var(--main-bg);
+    color: var(--dark-text);
+    overflow-x: hidden;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    width: var(--container-width-lg);
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+section {
+    margin-top: 3rem;
+    width: 100vw;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    line-height: 140%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.body-large {
+    font-size: 1.25rem;
+    line-height: 140%;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+a {
+    transition: var(--transition);
+}
+
+/*img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}*/
+
+.btn {
+    display: inline-block;
+    border-radius: var(--border-radius-1);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    transform: translate(-4px, 4px);
+}
+
+.pry {
+    background: var(--primary-btn);
+}
+
+.sec {
+    background: var(--secondary-btn);
+    color: var(--light-text);
+}
+
+
+/* NAVIGATION */
+
+header {
+    width: 100vw;
+    height: 7.5rem;
+    padding: 0.625rem 4rem;
+}
+
+.outer-nav {
+    background: var(--light-text);
+    padding: 0.625rem 1.5rem;
+    border-radius: var(--border-radius-3);
+}
+
+.inner-nav {
+    background: var(--nav-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    border-radius: var(--border-radius-3);
+}
+
+.inner-nav nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.inner-nav nav .nav-list {
+    display: flex;
+    gap: 5rem;
+}
+
+.inner-nav nav .nav-list .nav-icons {
+    display: flex;
+    gap: 3rem;
+}
+
+.ham-menu {
+    display: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    height: 2px;
+    width: 24px;
+    margin-bottom: 6px;
+    background-color: var(--dark-text);
+    transition: var(--transition);
+}
+
+.mobile-navigation-menu {
+    display: none;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HERO SECTION */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    width: 60%;
+}
+
+.hero-text {
+    width: 65%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1.5rem;
+    margin-inline: auto;
+}
+
+.hero-imgs {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-imgs :nth-child(2) {
+    margin-top: 1rem;
+}
+
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.5;
+    }
+}
+
+.fa-star {
+    color: var(--primary-btn);
+    animation: blink 2s linear infinite;
+}
+
+.stars :first-child {
+    position: absolute;
+    top: 150px;
+    left: 1200px;
+}
+
+.stars :nth-child(2) {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+}
+
+.stars :last-child {
+    position: absolute;
+    top: 900px;
+    left: 1400px;
+}
+
+
+/* BANNER SECTION */
+
+#banner-section {
+    border: 2px dashed var(--dark-text);
+    background: var(--pink-500);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+    gap: 3rem;
+    padding: 1.4375rem 0rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+
+/* IMAGE GRID */
+
+.image-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-items {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    height: 900px;
+}
+
+.item {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.personal-collection {
+    background-image: url(/Assets/personal\ collection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.bracelets {
+    background-image: url(/Assets/bracelets.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-arrivals {
+    background-image: url(/Assets/new-arrivals.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.chains {
+    background-image: url(/Assets/chains.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: span 2;
+}
+
+.rings {
+    background-image: url(/Assets/rings.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gifts {
+    background-image: url(/Assets/gifts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.diamond-selection {
+    background-image: url(/Assets/diamond-selection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: span 2;
+}
+
+.weddings {
+    background-image: url(/Assets/weddings.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: span 2;
+}
