@@ -1,0 +1,368 @@
+:root {
+    /*COLOR STYLES*/
+    --main-bg: #FCF2F6;
+    --nav-bg: #F8DEE8;
+    --primary-btn: #F2BED1;
+    --secondary-btn: #270A0A;
+    --light-text: #FBE9F0;
+    --dark-text: #200808;
+    --pink-500: #F2BED1;
+
+    --transition: all 300ms ease;
+
+    --container-width-lg: 90%;
+    --container-width-md: 85%;
+    
+    --border-radius-1: 0.5rem;
+    --border-radius-2: 1rem;
+    --border-radius-3: 1.5rem;
+    --border-radius-4: 2rem;
+    --border-radius-5: 5rem;
+
+}
+
+
+
+
+/* VERY LARGE DEVICES  */
+
+@media screen and (max-width: 1560px) {
+    .eight {
+        display: none;
+    }
+
+    .hero-section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    header {
+        padding: 0.625rem 1rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .stars :last-child {
+        top: 500px;
+        left: 1100px;
+    }
+
+}
+
+@media screen and (max-width: 1220px) {
+
+    header {
+        padding: 0rem;
+    }
+
+    .nav-container {
+        width: 100%;
+    }
+
+    .outer-nav {
+        border-radius: 0px;
+    }
+
+    .ham-menu {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .mobile-navigation-menu {
+        position: absolute;
+        background-color: var(--nav-bg);
+        top: 100px;
+        left: -100%;
+        bottom: 0;
+        right: 0;
+        padding-top: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 4rem;
+        overflow-y: scroll;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+
+    .appear {
+        left: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .stars :first-child {
+        position: absolute;
+        top: 150px;
+        left: 900px;
+    }
+    
+    .stars :nth-child(2) {
+        position: absolute;
+        top: 380px;
+        left: 200px;
+    }
+    
+    .stars :last-child {
+        position: absolute;
+        top: 600px;
+        left: 800px;
+    }
+}
+
+
+@media screen and (max-width: 1110px)  {
+    .sixth {
+        display: none;
+    }
+
+    .seventh {
+        display: none;
+    }
+
+    .hero-section {
+        width: 100%;
+    }
+
+    .cards {
+        width: 95%;
+    }
+
+}
+
+
+@media screen and (max-width: 980px) {
+    .hero-imgs > img {
+        width: 235px;
+        height: 265px;
+    }
+
+    .fifth {
+        display: none;
+    }
+
+    .grid-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4 , 1fr);
+        gap: 2rem;
+        width: 100%;
+        height: 1512px;
+    }
+
+    .personal-collection {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .chains {
+        grid-row: span 1;
+    }
+
+    .gifts {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .diamond-selection {
+        grid-row: span 1;
+    }
+
+    .weddings {
+        grid-row: span 1;
+    }
+
+    .image-slider {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .blog-cards-div {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+
+    .mail-list {
+        grid-column: span 3;
+    }
+
+    .stars :first-child {
+        position: absolute;
+        top: 150px;
+        left: 500px;
+    }
+    
+    
+    .stars :last-child {
+        position: absolute;
+        top: 1100px;
+        left: 600px;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+
+    section {
+        margin-top: 3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .hero-btns > button {
+        width: 100%;
+    }
+
+    .hero-imgs > img {
+        width: 119px;
+        height: 135px;
+    }
+
+    .fourth {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 660px) {
+    .grid-items {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8 , 1fr);
+        height: 3048px;
+    }
+
+    .gifts {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .stars :last-child {
+        position: absolute;
+        top: 800px;
+        left: 400px;
+    }
+
+    .image-slider {
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin: 6rem 0rem;
+    }
+
+    #large-img-double {
+        grid-template-columns: 1fr;
+        height: 35rem;
+    }
+    
+    .lg-img-text {
+        padding: 6rem 0rem 0rem 2rem;
+    }
+
+    .image-35 {
+        display: none;
+    }
+
+    .blog-cards-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(1 , 1fr);
+        width: 100%;
+    }
+
+    .mail-list {
+        grid-column: span 1;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .third {
+        display: none;
+    }
+
+    .card-text {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .title {
+        width: 100%;
+    }
+    
+    .price {
+        width: 100%;
+    }
+
+    .price>p {
+        text-align: left;
+    }
+
+    .card-btns :first-child {
+        width: 100%;
+    }
+
+    .card-btns :last-child {
+        display: none;
+    }
+
+    .stars :first-child {
+        position: absolute;
+        top: 150px;
+        left: 250px;
+    }
+
+    .stars :nth-child(2) {
+        position: absolute;
+        top: 380px;
+        left: 120px;
+    }
+
+    .stars :last-child {
+        position: absolute;
+        top: 850px;
+        left: 310px;
+    }
+
+    .hero-imgs {
+        gap: 1rem;
+    }
+
+    .cards {
+        gap: 1rem;
+    }
+
+    .copyright div {
+        flex-wrap: wrap;
+    }
+}

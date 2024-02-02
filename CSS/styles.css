@@ -91,11 +91,11 @@ a {
     transition: var(--transition);
 }
 
-/*img {
+img {
     display: block;
     width: 100%;
     object-fit: cover;
-}*/
+}
 
 .btn {
     display: inline-block;
@@ -103,6 +103,7 @@ a {
     padding: 1rem 1.5rem;
     cursor: pointer;
     transition: var(--transition);
+    text-align: center;
 }
 
 .btn:hover {
@@ -132,6 +133,12 @@ header {
     padding: 0.625rem 4rem;
 }
 
+.nav-container {
+    width: var(--container-width-lg);
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
 .outer-nav {
     background: var(--light-text);
     padding: 0.625rem 1.5rem;
@@ -154,12 +161,13 @@ header {
     width: 100%;
 }
 
-.inner-nav nav .nav-list {
+.nav-list {
     display: flex;
     gap: 5rem;
+    cursor: pointer;
 }
 
-.inner-nav nav .nav-list .nav-icons {
+.list-two .nav-icons {
     display: flex;
     gap: 3rem;
 }
@@ -179,6 +187,21 @@ header {
     transition: var(--transition);
 }
 
+.rotate-left {
+    transform: translateY(8px) rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.opaque {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.rotate-right {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: all 0.3s ease;
+}
+
 .mobile-navigation-menu {
     display: none;
 }
@@ -186,6 +209,18 @@ header {
 .mobile-nav-list {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.nav-icons-mobile {
+    display: flex;
+    gap: 3rem;
 }
 
 
@@ -463,6 +498,7 @@ header {
 
 .cards {
     display: grid;
+    width: 90%;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
@@ -478,6 +514,9 @@ header {
 
 .card-img {
     padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: var(--border-radius-2);
     transition: var(--transition);
 }
@@ -518,7 +557,7 @@ header {
     background: #EEE2F6;
 }
 
-.eight {
+.eight-img {
     background: #FFE3BB;
 }
 
@@ -581,13 +620,6 @@ header {
 .lg-img-text>p {
     color: var(--light-text);
 }
-
-/* .image-65 div {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    flex: 0 0 auto;
-} */
 
 .image-35 {
     width: 100%;
@@ -658,7 +690,11 @@ footer {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
-    gap: 2rem;
+    gap: 4rem;
+}
+
+.footer-logo {
+    max-width: 120px;
 }
 
 .footer-links {
@@ -676,7 +712,7 @@ footer {
 .mail-list {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .email {
