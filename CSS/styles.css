@@ -344,7 +344,7 @@ header {
 }
 
 .personal-collection {
-    background-image: url(/Assets/personal\ collection.jpg);
+    background-image: url(../Assets/personal\ collection.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -353,21 +353,21 @@ header {
 }
 
 .bracelets {
-    background-image: url(/Assets/bracelets.jpg);
+    background-image: url(../Assets/bracelets.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .new-arrivals {
-    background-image: url(/Assets/new-arrivals.webp);
+    background-image: url(../Assets/new-arrivals.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .chains {
-    background-image: url(/Assets/chains.jpg);
+    background-image: url(../Assets/chains.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -375,14 +375,14 @@ header {
 }
 
 .rings {
-    background-image: url(/Assets/rings.webp);
+    background-image: url(../Assets/rings.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .gifts {
-    background-image: url(/Assets/gifts.jpg);
+    background-image: url(../Assets/gifts.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -390,7 +390,7 @@ header {
 }
 
 .diamond-selection {
-    background-image: url(/Assets/diamond-selection.jpg);
+    background-image: url(../Assets/diamond-selection.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -398,7 +398,7 @@ header {
 }
 
 .weddings {
-    background-image: url(/Assets/weddings.jpg);
+    background-image: url(../Assets/weddings.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -605,7 +605,7 @@ header {
 .image-65 {
     width: 100%;
     height: 100%;
-    background-image: url('/Assets/65-1.png');
+    background-image: url('../Assets/65-1.png');
     background-size: cover;
 }
 
@@ -624,7 +624,7 @@ header {
 .image-35 {
     width: 100%;
     height: 100%;
-    background-image: url('/Assets/35.jpg');
+    background-image: url('../Assets/35.jpg');
     background-size: cover;
 }
 
